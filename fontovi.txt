@@ -3,5 +3,8 @@ ikonica u header-u
 'Material Symbols Rounded'
 
 Ostatak stranica
-
 'Ubuntu', sans-serif
+
+footer:
+Saira Extra Condensed
+

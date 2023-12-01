@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
 
 *{
     margin: 0px;
@@ -28,6 +32,7 @@ header{
     background-color: #000;
     display: flex;
     justify-content: space-between;
+    z-index: 5;
 }
 
 #header-icon{
@@ -40,7 +45,7 @@ header{
 
 #header-icon a{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 22px;
+    font-size: 1.4rem;
     text-decoration: none;
     color:#fff;
     text-transform: uppercase;
@@ -76,7 +81,7 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
+    font-size: 1.4rem;
     transition: color 0.6s ease-out;
 }
 
@@ -113,7 +118,7 @@ nav ul li a:active{
 
 #main-text h2{
     font-family:'Ubuntu', sans-serif;
-    font-size: 28px;
+    font-size: 2.2rem;
     text-transform: uppercase;
     font-style:oblique;
     color: #fff;
@@ -122,7 +127,7 @@ nav ul li a:active{
 #main-text p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
 
 }
 
@@ -142,73 +147,58 @@ nav ul li a:active{
     }
 }
 
-#why-us{
-    width: 100%;
+#pointer{
+    position: absolute;
+    bottom: -43vh;
+    left: 80vh;
+    width: fit-content;
     height: fit-content;
-    background-color: chocolate;
+    margin: 0px auto;
 }
 
-.wu-section{
-    width: 100%;
-    height: 350px;
-    background-color: brown;
+.fa-arrow-down-long{
+    color: maroon;
+    font-size: 40px;
 }
 
-.wu-header{
-    width: 100%;
-    height: 15%;
-    background-color: darkgreen;
+.fa-arrow-down-long {
+    color: maroon;
+    font-size: 40px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1.5s ease-in-out forwards infinite;
 }
 
-.wu-text-left{
-    float: left;
-    width: 65%;
-    height: 85%;
-    background-color: darkblue;
+@keyframes fadeInDown {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.wu-picture-right{
-    float: left;
-    width:35%;
-    height:85%;
-    background-color: darkorchid;
-}
-
-.wu-text-right{
-    float: right;
-    width: 65%;
-    height: 85%;
-    background-color: darkgoldenrod;
-}
-
-.wu-picture-left{
-    float: right;
-    width: 35%;
-    height: 85%;
-    background-color:darkgray;
-}
-
-#introduction {
+#introduction{
     width: 100%;
     height: 400px;
-    background: linear-gradient(to left, #353535, black);
+    display: flex;
+    justify-content: space-evenly;
 }
 
-
-
-.intro-content-text{
+ .intro-content-text{
     width: 50%;
-    height: 400px;
-    float: left;
+    height: 100%;
     text-align: center;
 }
 
 .intro-content-text p{
-    margin: auto 25%;
-    margin-top: 10%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 8%;
+    padding: 6%;
+    font-family:'Lucida Sans', sans-serif;
     font-size: 1.3em;
-    color: #fff;
+    color: #000;
 }
 
 .dr{
@@ -216,22 +206,180 @@ nav ul li a:active{
     color: cornflowerblue;
 }
 
-.intro-content-picture {
-    float: right;
+.intro-content-picture{
     width: 50%;
-    height: 400px;
-    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-content-picture img {
     width: 90%;
     height: 90%;
     object-fit: cover;
-    border-radius: 15px;
-    margin: 2%;
+    border-radius: 20px;
 }
-
 
 .cleaner{
     clear: both;
 }
+
+#why-us{
+    width: 100%;
+    height: fit-content;
+}
+
+.wu-section {
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4%;
+    border-bottom: 2px solid maroon;
+}
+
+.wu-section .wu-text-left,
+.wu-section .wu-text-right {
+    width: 50%;
+}
+
+.wu-picture-left,
+.wu-picture-right {
+    width: 50%; 
+}
+
+.wu-section .wu-text-right {
+    order: 1;
+}
+
+.wu-section img {
+    width: 90%;
+    height: 90%;
+    border-radius: 6%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.wu-section img:hover {
+    box-shadow: 0px 0px 25px rgba(37, 37, 37, 1);
+}
+
+#first-img{
+    margin-top: 20px;
+}
+
+.wu-header h2{
+    font-family:sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: oblique;
+    text-decoration:underline;
+    text-decoration-color: rgba(128, 0, 0, 0.775);
+    cursor: default;
+    padding-top: 8%;
+}
+
+.section-text{
+    text-align: center;
+    margin: 6%;
+}
+
+.section-text p{
+    font-family:'Inter', sans-serif;
+    font-size: 1.6rem;
+    color: #000;
+}
+
+footer {
+    width: 100%;
+    height: 36vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom {
+    flex: 1;
+    font-family: 'Inter';
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+#newsletter{
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+#newsletter p{
+    text-align: center;
+    padding: 5%;
+    font-size: 1.1rem;
+    font-family: monospace;
+}
+
+#sub{ /*dugme*/
+    width: 30%;
+    font-family:sans-serif;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#mail{
+    width: 50%;
+}
+
+.bottom p{
+    font-family:sans-serif;
+    font-size: 1.4rem;
+}
+
+.bottom ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom ul li{
+    float: left;
+    padding-top: 10%;  
+}
+
+.bottom h5{
+    text-align: center;
+    font-family:sans-serif;
+    font-size: 1.4rem;
+    color: #353535;
+    text-decoration: underline;
+    text-decoration-color: rgba(128, 0, 0, 0.900);
+}
+
+.bottom i {
+    font-size: 1.8rem;
+    color: #353535;
+    transition: font-size 0.3s ease;
+}
+
+.bottom i:hover {
+    font-size: 2.4rem;
+}
+
+.fa-facebook:hover{
+    color:  #316FF6;
+}
+
+.fa-youtube:hover{
+    color:#ff0000d4;
+}
+
+.fa-x-twitter:hover{
+    color: #000;
+}
+
+.fa-linkedin:hover{
+    color: #0077b5;
+}
+
+/*namestiti rss i sitemap!! */
