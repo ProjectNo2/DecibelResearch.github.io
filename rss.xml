@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+	<channel>
+	    <item>
+			<title>New Releases</title>
+			<link>https://projectno2.github.io/DecibelResearch.github.io/index.html</link>
+			<description>Exclusive offers every month!</description>
+		</item>
+		<item>
+			<title>Discount Week</title>
+			<link>https://projectno2.github.io/DecibelResearch.github.io/Tune-In.html</link>
+			<description>Get your 20% discount coupon</description>
+		</item>
+	</channel>
+</rss>

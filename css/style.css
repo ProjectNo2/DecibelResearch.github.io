@@ -518,7 +518,7 @@ input {
 }
 
 
-/* About Us*/
+/* Author */
 
 #wraper-about-us{
     display: flex;
@@ -556,5 +556,79 @@ input {
     font-size: 1.4rem;
 }
 
+/* Gallery */
+
+#gallery-content{
+    width: 100%;
+    height: fit-content;
+}
+
+#gallery-top {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.g-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#gallery-top img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+#gallery-content img{
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    border: 4px solid  maroon;
+}
+
+#gallery-content img:hover{
+    filter: grayscale(0%);
+}
+
+#gallery-mid{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.g-mid{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.g-mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#gallery-bot {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.g-bot img {
+    width: 90%;
+    height: 90%;
+}
 
 

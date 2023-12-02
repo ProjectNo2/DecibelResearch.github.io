@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="Electrical Instruments, Best Music Equipment, Electro Music"/>
+    <meta name="description" content="Experience the synergy of technology and creativity in the world of electronic music. Join us as we explore the beats, melodies, and innovation that define this dynamic genre."/>
+    <meta name="author" content="mailto:boris.jolovic.249.21@ict.edu.rs"/>
+    <meta name="copyright" content="Visoka ICT Skola @2023"/>
+    <meta name="abstract" content="Rhythmic Wonders of Electronic Music"/>
+    <meta name="zipcode" content="11000"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if IE]>    <link rel="stylesheet" type="text/css" href="all-ie-only.css" />    <![endif]-->
+    <link rel="shorcut icon" href="icon/headphone-icon.ico"/>
+    <script src="https://kit.fontawesome.com/db152dfef0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <title>Tune In</title>
+</head>
+<body>
+    <video autoplay muted loop id="video">
+        <source src="img/tune-in-background.mp4" type="video/mp4">
+        <source src="img/tune-in-background.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+<div id="tune-in-overlay">
+    <header>
+        <div id="header-icon">
+            
+            <a href="index.html">
+                Decibel Research   
+                <i class="fa-solid fa-headphones fa-beat-fade"></i>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="author.html">Author</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="tune-in.html">Tune In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-log-in">
+            <form method="#" action="#" id="tune-in-form">
+                <legend>Join the Wonders of Electronic Beats</legend>
+                <br/>
+
+                    <label for="name">
+                        Usename:
+                    </label>
+                    <input type="text" id="name" name="name" placeholder="between 2 and 15 letters" maxlength="15" required="required" list="prof" pattern="[a-zšđžčćA-ZŠĐŽLČĆ]{1,14}$"/>
+                    <datalist id="prof">
+                        <option value="Dijana"></option>
+                        <option value="Uroš"></option>
+                        <option value="Luka"></option>
+                        <option value="Nenad"></option>
+                    </datalist>
+
+                    <label for="last-name">
+                        Last Name:
+                    </label>
+                    <input type="text" id="last-name" name="last-name" placeholder="between 3 and 20 letters" maxlength="20" required="required" list="prof-prez"/>
+                    <datalist id="prof-prez">
+                        <option value="Radovanovic"></option>
+                        <option value="Dimitrijević"></option>
+                        <option value="Lukic"></option>
+                        <option value="Kojić"></option>
+                    </datalist>
+
+                    <label for="mail">
+                        Email:
+                    </label>
+                    <input type="mail" id="mail" name="mail" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z] {2,6}$" placeholder="enter your email" required="required" maxlength="30" list="prof-mail"/>
+                    <datalist id="prof-mail">
+                        <option value="dijana.radovanovic@ict.edu.rs"></option>
+                        <option value="uros.dimitrijevic@ict.edu.rs"></option>
+                        <option value="luka.lukic@ict.edu.rs"></option>
+                        <option value="nenad.kojic@ict.edu.rs"></option>
+                    </datalist> 
+
+                    <label for="date">
+                        Date:
+                    </label>
+                    <input type="date" id="date" name="date"  required="required"/>
+
+                    <label for="time">
+                        Time:
+                    </label>
+                    <input type="time" id="time" name="time" required="required"/>
+
+                    <button type="submit" id="submit" name="sub">
+                        Register
+                    </button>
+            </form>
+        </div>
+</div>
+</body>
+</html>
