@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-/* Index */
+/* Index.html */
 
 *{
     margin: 0px;
@@ -15,19 +15,18 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 255, 255);
+    background-color:rgb(180, 130, 90);
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #101010;
+    background-color: #fff;
 }
-
 
 header{
     width: 100%;
     height: 50px;
     position: fixed;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.65);
     display: flex;
     justify-content: space-between;
     z-index: 5;
@@ -51,11 +50,11 @@ header{
 }
 
 #header-icon a:hover{
-    color: rgb(0, 255, 255);
+    color:rgb(169, 138, 98);
 }
 
 .fa-beat-fade{
-    color: rgb(0, 255, 255);
+    color: cornflowerblue;
 }
 
 nav{
@@ -84,17 +83,19 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: rgb(0, 255, 255);
+    color:rgb(190, 140, 110);
 }
 
 nav ul li a:active{
     color: rgb(0, 0, 130);
 }
 
+/* main */
+
 #main-overlay{
     width: 100%;
     height: 100vh;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.5);
 }
 
 #main-background{
@@ -145,22 +146,18 @@ nav ul li a:active{
     }
 }
 
-#pointer{
+#pointer {
     position: absolute;
-    bottom: -43vh;
-    left: 80vh;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: fit-content;
     height: fit-content;
-    margin: 0px auto;
 }
 
-.fa-arrow-down-long{
-    color: maroon;
-    font-size: 40px;
-}
 
 .fa-arrow-down-long {
-    color: maroon;
+    color: #fff;
     font-size: 40px;
     opacity: 0;
     transform: translateY(-20px);
@@ -177,6 +174,8 @@ nav ul li a:active{
         transform: translateY(0);
     }
 }
+
+/* introduction */
 
 #introduction{
     width: 100%;
@@ -223,6 +222,8 @@ nav ul li a:active{
     clear: both;
 }
 
+/* why-us */
+
 #why-us{
     width: 100%;
     height: fit-content;
@@ -232,7 +233,7 @@ nav ul li a:active{
     height: 400px;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
     border-bottom: 2px solid maroon;
 }
 
@@ -290,92 +291,27 @@ nav ul li a:active{
     color: #000;
 }
 
+.wu-section:last-child {
+    margin-bottom: 0px;
+}
+
+/* Footer */
+
 footer {
     width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-.bottom {
-    flex: 1;
-    font-family: 'Inter';
-    font-size: 0.9rem;
-    text-align: center;
-    cursor: default;
-    display: flex;
-    justify-content: space-around;
-}
-
-#newsletter{
-    width: 100%;
-    height: 100%;
-    align-content: center;
-}
-
-#newsletter p{
-    text-align: center;
-    padding: 5%;
-    font-size: 1.1rem;
-    font-family: monospace;
-}
-
-#sub{
-    width: 30%;
-    font-family:sans-serif;
-    font-size: 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-    margin: 0px auto;
-}
-
-#sub:hover{
-    color: #fff;
-    background-color: rgba(128, 0, 0, 0.900);
-}
-
-#mail-index{
-    width: 50%;
-    margin: 0px auto;
-}
-
-#contact{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-
-}
-
-#about-us{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-#about-us a{
-    text-decoration: none;
-    color: #353535;
-}
-
-#about-us li{
-    margin-bottom: 15%;
-}
-
-.bottom p{
-    font-family:sans-serif;
-    font-size: 1.4rem;
-}
-
-.bottom ul{
-    list-style-type: none;
+    height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+footer .bottom:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
-.bottom h5{
+footer h5{
     text-align: center;
     font-family:sans-serif;
     font-size: 1.4rem;
@@ -384,11 +320,76 @@ footer {
     text-decoration-color: rgba(128, 0, 0, 0.900);
 }
 
-.bottom i {
+footer p{
+    font-family:'Ubuntu',sans-serif;
+    font-size: 0.92rem;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer i{
     font-size: 1.8rem;
     color: #353535;
     transition: font-size 0.3s ease;
 }
+
+footer a{
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+    color:blue ;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.1rem;
+}
+
+#mail-index{
+    margin:0px auto;
+    margin-bottom: 5px;
+    width: 50%;
+    border: 2px solid #373737;
+}
+
+#submit-index{
+    margin: 0px auto;
+    width: auto;
+    font-style:italic;
+    transition: font-size 0.3s ease;
+
+}
+
+#submit-index:hover{
+    background-color: rgba(128, 0, 0, 0.900);
+    color: #fff;
+    font-size: 0.88rem;
+}
+
+footer .bottom:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .bottom:nth-child(2) ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+footer .bottom:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .bottom:nth-child(3) ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
 
 .bottom i:hover {
     font-size: 2.4rem;
@@ -418,20 +419,9 @@ footer {
     color: rgb(0, 150, 255)
 }
 
-#additional-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.fa-robot:hover{
+    color: #959595;
 }
-
-#additional-links li{
-    margin-top: 30%;
-}
-
-
-
-/*namestiti rss i sitemap!! */
-
 
 /* Tune In */
 
@@ -477,8 +467,8 @@ form{
 }
 
 #tune-in-form,label,button{
-    font-family:'Ubuntu',sans-serif;
-    font-size: 1.1rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
     color: #000;
 }
 
@@ -501,8 +491,7 @@ input {
     
 }
 
-
-#submit{
+#submit-tune-in{
     margin-top: 3%;
     width:18%;
     border-radius: 15px; 
@@ -511,7 +500,7 @@ input {
     transition: box-shadow 0.3s ease-in-out;
 }
 
-#submit:hover{
+#submit-tune-in:hover{
     color: rgb(0, 255, 255);
     background-color: #353535;
     box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8);
@@ -625,12 +614,9 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .g-bot img {
     width: 90%;
     height: 90%;
 }
-
-
