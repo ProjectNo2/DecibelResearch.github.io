@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:media="http://search.google.com/mrss/">
+	<channel>
+	    <item>
+			<language>en</language>
+			<title>New Releases</title>
+			<link>https://projectno2.github.io/DecibelResearch.github.io/index.html</link>
+			<description>Exclusive monthly offer!</description>
+			<webMaster>boris.jolovic.249.21@ict.edu.rs</webMaster>
+			<catergory>Technology</catergory>
+		</item>
+		<item>
+			<language>en</language>
+			<title>Discount Week</title>
+			<link>https://projectno2.github.io/DecibelResearch.github.io/Tune-In.html</link>
+			<description>Get your 20% discount coupon</description>
+			<webMaster>boris.jolovic.249.21@ict.edu.rs</webMaster>
+			<catergory>Technology</catergory>
+		</item>
+	</channel>
+</rss>
